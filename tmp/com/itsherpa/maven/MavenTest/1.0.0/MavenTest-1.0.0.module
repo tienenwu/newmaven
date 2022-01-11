@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.itsherpa.maven",
+    "module": "MavenTest",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "MavenTest-1.0.0.aar",
+          "url": "MavenTest-1.0.0.aar",
+          "size": 74259,
+          "sha512": "966c5e7b3b247a4f94821e2be512356f7fd27df18405ee3911ea64a49d98a27ce4f8a2dede9d67efb8f0613da453118450efb9ee54565b011b5c59c67d680799",
+          "sha256": "96f3c25a6a58950f61e4e444201fc590e188633ce5d193a4b22ddaec455c423b",
+          "sha1": "c015290e1e64daaafeb83965264347aac19abe20",
+          "md5": "898bb290c477bcae56cf676aa92ee1f2"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.20"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "MavenTest-1.0.0.aar",
+          "url": "MavenTest-1.0.0.aar",
+          "size": 74259,
+          "sha512": "966c5e7b3b247a4f94821e2be512356f7fd27df18405ee3911ea64a49d98a27ce4f8a2dede9d67efb8f0613da453118450efb9ee54565b011b5c59c67d680799",
+          "sha256": "96f3c25a6a58950f61e4e444201fc590e188633ce5d193a4b22ddaec455c423b",
+          "sha1": "c015290e1e64daaafeb83965264347aac19abe20",
+          "md5": "898bb290c477bcae56cf676aa92ee1f2"
+        }
+      ]
+    }
+  ]
+}
